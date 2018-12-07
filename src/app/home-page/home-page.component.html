@@ -1,0 +1,15 @@
+<div>
+  <form class="mt-5 d-flex mb-3" action="">
+    <input class="form-control col-10" type="text" required placeholder="Enter country...">
+    <!-- korisnik moze (mora) da unese ime drzave, naravno ne mora da unese celo ime, dovoljno je barem jedno slovo. -->
+
+    <button class="form-control btn btn-primary col-2" type="submit" (click)="onSearch">Search</button>
+    <!-- Klikom na dugme search ispod tog input elementa treba izlistati sve drzave koje spadaju u taj kriterijum. -->
+  </form>
+
+  <ul class="list-group text-left">
+    <li class="list-item display-4" *ngFor="let country of countries">
+      <span class="mr-3">{{country}}</span><button class="btn btn-success" (click)="onAdd">Add</button>
+    </li>
+  </ul>
+</div>
