@@ -1,3 +1,9 @@
 ul {
   list-style: none;
 }
+
+.form-control.ng-invalid.ng-touched,
+.form-control:focus.ng-invalid.ng-touched {
+  border: 1px solid orangered;
+  box-shadow: 0 0 0 0.2rem rgba(orangered, .25);
+}
