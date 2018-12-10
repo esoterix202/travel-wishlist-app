@@ -6,14 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { WhishlistComponent } from './whishlist/whishlist.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    WhishlistComponent,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,
